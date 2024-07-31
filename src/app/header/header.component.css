@@ -1,0 +1,9 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-wrapper h4 {
+  margin: 0;
+  margin-left: 8px;
+}
