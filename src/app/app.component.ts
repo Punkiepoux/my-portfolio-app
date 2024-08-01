@@ -6,6 +6,7 @@ import { dev } from './dev';
 import { INFO } from './info';
 import { FooterComponent } from "./footer/footer.component";
 import { CompetencesComponent } from "./competences/competences.component";
+import { FormationComponent } from "./formation/formation.component";
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { CompetencesComponent } from "./competences/competences.component";
     HeaderComponent,
     IndexComponent,
     FooterComponent,
-    CompetencesComponent
+    CompetencesComponent,
+    FormationComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
