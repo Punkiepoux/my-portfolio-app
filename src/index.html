@@ -1,17 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Antoine Dausque</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="./output.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
-<body class="blue-grey darken-4">
-  <app-root></app-root>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Antoine Dausque</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body class="blue-grey darken-4">
+    <app-root></app-root>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".carousel");
+        var instances = M.Carousel.init(elems, {
+          duration: 200, // Durée de la transition en millisecondes
+          dist: -100, // Perspective du carousel, -100 pour une vue plus 3D
+          shift: 0, // Décalage entre les images
+          padding: 0, // Espace entre les images
+          numVisible: 5, // Nombre d'images visibles
+          indicators: true, // Afficher les indicateurs
+          noWrap: false, // Permet le wraparound
+        });
+      });
+    </script>
+  </body>
 </html>

@@ -5,6 +5,7 @@ import { IndexComponent } from './index/index.component';
 import { dev } from './dev';
 import { INFO } from './info';
 import { FooterComponent } from "./footer/footer.component";
+import { CompetencesComponent } from "./competences/competences.component";
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { FooterComponent } from "./footer/footer.component";
     HeaderComponent,
     IndexComponent,
     FooterComponent,
+    CompetencesComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
