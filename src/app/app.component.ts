@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { IndexComponent } from './index/index.component';
 import { dev } from './dev';
 import { INFO } from './info';
+import { FooterComponent } from "./footer/footer.component";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import { INFO } from './info';
     RouterOutlet,
     HeaderComponent,
     IndexComponent,
-  ],
+    FooterComponent,
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
