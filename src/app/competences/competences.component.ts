@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
+import { COMPETENCES } from './competences-mockup';
+import { competence } from './competence';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-competences',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './competences.component.html',
-  styleUrl: './competences.component.css'
+  styleUrl: './competences.component.css',
 })
 export class CompetencesComponent {
-  myComptences: string[] = [
+  competenceList: competence[] = COMPETENCES;
+  myCompetences: string[] = [
     'html',
     'css',
     'javascript',
@@ -19,6 +23,12 @@ export class CompetencesComponent {
     'github',
     'confluence',
     'jira',
-    'python'
+    'python',
+    'materialize',
   ];
+
+  displayedCompetences: competence[] = this.competenceList.filter(competence =>
+    this.myCompetences.includes(competence.id)
+  );
+
 }

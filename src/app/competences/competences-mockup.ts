@@ -199,7 +199,7 @@ export const COMPETENCES: competence[] = [
   {
     id: 'javascript',
     name: 'JavaScript',
-    image: 'svg/skills/js.svg'
+    image: 'svg/skills/javascript.svg'
   },
   {
     id: 'jira',
@@ -394,7 +394,7 @@ export const COMPETENCES: competence[] = [
   {
     id: 'typescript',
     name: 'TypeScript',
-    image: 'svg/skills/ts.svg'
+    image: 'svg/skills/typescript.svg'
   },
   {
     id: 'ubuntu',
