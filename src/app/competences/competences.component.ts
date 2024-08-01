@@ -8,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './competences.component.css'
 })
 export class CompetencesComponent {
-
+  myComptences: string[] = [
+    'html',
+    'css',
+    'javascript',
+    'typescript',
+    'angular',
+    'nodejs',
+    'git',
+    'github',
+    'confluence',
+    'jira',
+    'python'
+  ];
 }
