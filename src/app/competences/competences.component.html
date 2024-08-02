@@ -1,11 +1,14 @@
 <div class="competence-wrapper">
   <h4>Compétences</h4>
-  <div class="carousel">
-    <a
-      *ngFor="let competence of displayedCompetences"
-      class="carousel-item"
-      href="#"
-      ><img [src]="competence.image"
-    /></a>
+  <div class="carousel-wrapper">
+    <div class="carousel">
+      <a
+        *ngFor="let competence of displayedCompetences"
+        class="carousel-item"
+        ><img class="competence-img" [src]="competence.image"
+      />
+      <p class=center>{{ competence.name }}</p>
+      </a>
+    </div>
   </div>
 </div>

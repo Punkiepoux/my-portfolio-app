@@ -18,27 +18,56 @@
   <body class="blue-grey darken-4">
     <app-root></app-root>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var elems = document.querySelectorAll(".carousel");
         var instances = M.Carousel.init(elems, {
-          duration: 200, // Durée de la transition en millisecondes
-          dist: -100, // Perspective du carousel, -100 pour une vue plus 3D
+          duration: 0, // Durée de la transition en millisecondes
+          dist: -50, // Perspective du carousel, -100 pour une vue plus 3D
           shift: 0, // Décalage entre les images
-          padding: 0, // Espace entre les images
+          padding: 400, // Espace entre les images
           numVisible: 5, // Nombre d'images visibles
+          fullWidth: false, // Afficher les images en plein écran
           indicators: true, // Afficher les indicateurs
           noWrap: false, // Permet le wraparound
         });
+
+        // Définir l'intervalle d'auto-play
+        let autoPlayInterval = setInterval(() => {
+          instances[0].next();
+        }, 3500); // Change de slides toutes les 3,5 secondes
+
+        // Écouter l'événement "mouseenter" pour stopper l'auto-play
+        elems[0].addEventListener("mouseenter", () => {
+          clearInterval(autoPlayInterval);
+          // Utiliser les fonctions internes de Materialize pour stopper immédiatement
+          var instance = M.Carousel.getInstance(elems[0]);
+        });
+
+        // Écouter l'événement "mouseleave" pour redémarrer l'auto-play
+        elems[0].addEventListener("mouseleave", () => {
+          // Utiliser les fonctions internes de Materialize pour redémarrer immédiatement
+          autoPlayInterval = setInterval(() => {
+            var instance = M.Carousel.getInstance(elems[0]);
+            if (instance) {
+              instance.next();
+            }
+          }, 3500);
+        });
       });
     </script>
+
     <script>
+      // script des cards de formation
       document.addEventListener("DOMContentLoaded", function () {
         var elems = document.querySelectorAll(".collapsible");
         var instances = M.Collapsible.init(elems, {});
       });
     </script>
+
     <script>
+      // script du dropdown settings
       document.addEventListener("DOMContentLoaded", function () {
         var elems = document.querySelectorAll(".dropdown-trigger");
         var instances = M.Dropdown.init(elems, {});

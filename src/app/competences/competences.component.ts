@@ -25,6 +25,7 @@ export class CompetencesComponent {
     'jira',
     'python',
     'materialize',
+    'ubuntu',
   ];
 
   displayedCompetences: competence[] = this.competenceList.filter(competence =>
