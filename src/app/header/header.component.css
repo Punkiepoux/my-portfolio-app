@@ -7,3 +7,19 @@
   margin: 0;
   margin-left: 8px;
 }
+
+.custom-dropdown-menu{
+  width: 100px !important;
+}
+
+.custom-li {
+  padding-right: 8px;
+  width: 100% !important;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flag-image {
+  height: 24px;
+  width: auto;
+}

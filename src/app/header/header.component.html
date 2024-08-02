@@ -10,6 +10,16 @@
         <li><a>Expériences</a></li>
         <li><a>Formations</a></li>
         <li><a>Projets</a></li>
+        <li>
+          <a class="dropdown-trigger" href="#" data-target="dropdown1">
+            <i class="material-icons">settings</i>
+          </a>
+          <ul id='dropdown1' class='dropdown-content custom-dropdown-menu blue-grey darken-4'>
+            <li class="custom-li"><i class="material-icons">cancel</i></li>
+            <li><a [href]="languageSwitch.url"><img class="flag-image" [src]="languageSwitch.src" alt="{{languageSwitch.label}}"></a></li>
+            <li style="padding-left: 14px;"><i class="material-icons">brightness_5</i></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>
