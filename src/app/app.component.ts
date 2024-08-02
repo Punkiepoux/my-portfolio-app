@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { IndexComponent } from './index/index.component';
-import { dev } from './dev';
-import { INFO } from './info';
 import { FooterComponent } from "./footer/footer.component";
 import { CompetencesComponent } from "./competences/competences.component";
 import { FormationComponent } from "./formation/formation.component";
+import { InfosComponent } from "./infos/infos.component";
 
 @Component({
   selector: 'app-root',
@@ -17,7 +16,8 @@ import { FormationComponent } from "./formation/formation.component";
     IndexComponent,
     FooterComponent,
     CompetencesComponent,
-    FormationComponent
+    FormationComponent,
+    InfosComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
