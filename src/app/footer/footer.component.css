@@ -1,3 +1,10 @@
 .footer-wrapper {
-  padding: 4px 8px 4px 8px;
+  padding: 0px 8px 0px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-img {
+  height: 38px;
 }
