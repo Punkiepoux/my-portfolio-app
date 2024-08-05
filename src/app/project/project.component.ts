@@ -32,7 +32,6 @@ export class ProjectComponent implements OnInit {
 
   filterProjectsByLanguage() {
     const language = this.getLanguage();
-    console.log(language);
     this.projects = PROJECTS.filter(project => project.language === language);
   }
 }

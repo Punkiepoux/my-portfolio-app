@@ -3,10 +3,13 @@
     <div class="left index-wrapper">
       <div>
         <h1 class="blue-grey-text left-align">Antoine Dausque</h1>
-        <p class="left-align">
-          Hey ! Je suis Antoine, <a>ingénieur en informatique</a>,
-          <a>développeur freelance</a>, et <a>product Owner</a>
+        <p *ngIf="lg === 'fr'" class="left-align">
+          Salut !
         </p>
+        <p *ngIf="lg === 'en'" class="left-align">
+          Hey !
+        </p>
+        <p *ngFor="let info of infos" class="left-align">{{info.description}}</p>
       </div>
     </div>
     <div class="right index-wrapper">

@@ -1,6 +1,9 @@
 import { Routes } from '@angular/router';
-import { ProjectComponent } from './project/project.component';
+import { AppComponent } from './app.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const routes: Routes = [
-  { path: ':lang', component: ProjectComponent }
+  { path: 'fr', component: AppComponent },
+  { path: 'en', component: AppComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];

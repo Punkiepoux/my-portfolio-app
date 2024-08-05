@@ -5,7 +5,6 @@ import { IndexComponent } from './index/index.component';
 import { FooterComponent } from "./footer/footer.component";
 import { CompetencesComponent } from "./competences/competences.component";
 import { FormationComponent } from "./formation/formation.component";
-import { InfosComponent } from "./infos/infos.component";
 import { ProjectComponent } from "./project/project.component";
 
 @Component({
@@ -18,7 +17,6 @@ import { ProjectComponent } from "./project/project.component";
     FooterComponent,
     CompetencesComponent,
     FormationComponent,
-    InfosComponent,
     ProjectComponent
 ],
   templateUrl: './app.component.html',
