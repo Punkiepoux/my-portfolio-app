@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { formation } from './formation';
 import { FORMATIONS } from './formations';
+
+declare var M: any;
 
 @Component({
   selector: 'app-formation',
@@ -10,6 +12,12 @@ import { FORMATIONS } from './formations';
   templateUrl: './formation.component.html',
   styleUrl: './formation.component.css'
 })
-export class FormationComponent {
+export class FormationComponent implements AfterViewInit {
   formationList: formation[] = FORMATIONS;
+
+  ngAfterViewInit(): void {
+    var elems = document.querySelectorAll(".collapsible");
+    var instances = M.Collapsible.init(elems, {});
+  }
+
 }

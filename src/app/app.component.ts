@@ -17,10 +17,12 @@ import { ProjectComponent } from "./project/project.component";
     FooterComponent,
     CompetencesComponent,
     FormationComponent,
-    ProjectComponent
+    ProjectComponent,
 ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrls: [
+      './app.component.css',
+    ],
 })
 export class AppComponent {
   title = 'my-portfolio-app';

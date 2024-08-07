@@ -7,7 +7,7 @@ export const INFO: dev[] = [
     prenom: 'Antoine',
     photo: './public/profil.png',
     description:
-      "Je suis un développeur web surtout orienté front-end, j'aime les nouvelles technologies et les challenges. Je travaille en freelance en plus de mon plein temps pour réaiser des missions, je travaille à la feature de préférence. Je suis aussi Product Owner du service Data dans l'entreprise française EGERIE",
+      "Je suis un développeur web surtout orienté front-end, j'aime les nouvelles technologies et les challenges. Je travaille en freelance en plus de mon plein temps pour réaliser des missions.",
     dateNaissance: new Date(1997, 1, 29),
     linkedIn: '',
     github: '',
@@ -25,7 +25,7 @@ export const INFO: dev[] = [
     prenom: 'Antoine',
     photo: './public/profil.png',
     description:
-      'I am a front-end web developer, I love new technologies and challenges. I work as a freelancer in addition to my full-time job to carry out missions, I work on the feature preferably. I am also Product Owner of the Data service in the French company EGERIE',
+      'I am a front-end web developer, I love new technologies and challenges. I work as a freelancer in addition to my full-time job to carry out missions.',
     dateNaissance: new Date(1997, 1, 29),
     linkedIn: '',
     github: '',

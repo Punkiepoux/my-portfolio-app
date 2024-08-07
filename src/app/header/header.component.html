@@ -4,22 +4,13 @@
       <span class="left valign-wrapper">
         <h4 class="center-align">Antoine Dausque</h4>
       </span>
-      <ul class="right">
-        <li><a>Qui suis-je ?</a></li>
+      <ul class="right valign-wrapper">
+        <li><a>Index</a></li>
         <li><a>Compétences</a></li>
         <li><a>Expériences</a></li>
         <li><a>Formations</a></li>
         <li><a>Projets</a></li>
-        <li>
-          <a class="dropdown-trigger" href="#" data-target="dropdown1">
-            <i class="material-icons">settings</i>
-          </a>
-          <ul id='dropdown1' class='dropdown-content custom-dropdown-menu blue-grey darken-4'>
-            <li class="custom-li"><i class="material-icons">cancel</i></li>
-            <li><a [href]="languageSwitch.url"><img class="flag-image" [src]="languageSwitch.src" alt="{{languageSwitch.label}}"></a></li>
-            <li style="padding-left: 14px;"><i class="material-icons">brightness_5</i></li>
-          </ul>
-        </li>
+        <li class="flag-li valign-wrapper"><a [href]="languageSwitch.url" class="flag-li valign-wrapper"><img class="flag-image" [src]="languageSwitch.src" alt="{{languageSwitch.label}}"></a></li>
       </ul>
     </div>
   </nav>

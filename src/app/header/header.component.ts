@@ -14,9 +14,9 @@ export class HeaderComponent {
   get languageSwitch(): { url: string, label: string, src: string } {
     const path = this.location.path();
     if (path.includes('/fr')) {
-      return { url: '/en', label: 'fr', src: 'svg/flags/united-kingdom.svg' };
+      return { url: '/en', label: 'en', src: 'svg/flags/france.svg' };
     } else if (path.includes('/en')) {
-      return { url: '/fr', label: 'fr', src: 'svg/flags/france.svg' };
+      return { url: '/fr', label: 'fr', src: 'svg/flags/united-kingdom.svg' };
     }
     return { url: '/fr', label: 'fr', src: 'svg/flags/france.svg' };  // Default values
   }

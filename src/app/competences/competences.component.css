@@ -2,16 +2,30 @@
   height: 100vh;
 }
 
-.carousel-item {
-  transition: transform 3.5s linear, opacity 3.5s ease-in-out;
-}
-
 .competence-img {
-  height: 128px !important;
+  height: 88px !important;
 }
 
-.carousel-wrapper {
-  height: 100%;
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.swiper-container {
+  height: 80vh;
   display: flex;
   align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
