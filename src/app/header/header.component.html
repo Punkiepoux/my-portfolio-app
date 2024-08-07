@@ -6,10 +6,14 @@
       </span>
       <ul class="right valign-wrapper hide-on-med-and-down">
         <li><a>Index</a></li>
-        <li><a>Compétences</a></li>
-        <li><a>Expériences</a></li>
-        <li><a>Projet</a></li>
-        <li><a>Formations</a></li>
+        <li *ngIf="lg === 'fr'"><a>Compétences</a></li>
+        <li *ngIf="lg === 'en'"><a>Skills</a></li>
+        <li *ngIf="lg === 'fr'"><a>Expériences</a></li>
+        <li *ngIf="lg === 'en'"><a>Experiences</a></li>
+        <li *ngIf="lg === 'fr'"><a>Projets</a></li>
+        <li *ngIf="lg === 'en'"><a>Projects</a></li>
+        <li *ngIf="lg === 'fr'"><a>Formations</a></li>
+        <li *ngIf="lg === 'en'"><a>Studies</a></li>
         <li class="flag-li valign-wrapper">
           <a [href]="languageSwitch.url" class="flag-li valign-wrapper">
             <img class="flag-image" [src]="languageSwitch.src" alt="{{languageSwitch.label}}">
@@ -21,10 +25,14 @@
       </div>
       <ul id='dropdown1' class='dropdown-content dropdown-ul blue-grey darken-3'>
         <li><a>Index</a></li>
-        <li><a>Compétences</a></li>
-        <li><a>Expériences</a></li>
-        <li><a>Projet</a></li>
-        <li><a>Formations</a></li>
+        <li *ngIf="lg === 'fr'"><a>Compétences</a></li>
+        <li *ngIf="lg === 'en'"><a>Skills</a></li>
+        <li *ngIf="lg === 'fr'"><a>Expériences</a></li>
+        <li *ngIf="lg === 'en'"><a>Experiences</a></li>
+        <li *ngIf="lg === 'fr'"><a>Projets</a></li>
+        <li *ngIf="lg === 'en'"><a>Projects</a></li>
+        <li *ngIf="lg === 'fr'"><a>Formations</a></li>
+        <li *ngIf="lg === 'en'"><a>Studies</a></li>
         <li class="flag-dropdown valign-wrapper">
           <a [href]="languageSwitch.url" class="flag-dropdown">
             <img class="flag-image" [src]="languageSwitch.src" alt="{{languageSwitch.label}}">

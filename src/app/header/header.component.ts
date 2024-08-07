@@ -1,29 +1,34 @@
+import { LanguageService } from './../language.service';
 import { AfterViewInit, Component } from '@angular/core';
-import { Location } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 declare var $: any;
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements AfterViewInit{
-  constructor(private location: Location) {}
+  lg: string = '';
+
+  constructor(private languageService: LanguageService) { }
 
   ngAfterViewInit(): void {
     ($('.dropdown-trigger') as any).dropdown();
+    this.lg = this.languageService.lg;
   }
 
   get languageSwitch(): { url: string, label: string, src: string } {
-    const path = this.location.path();
-    if (path.includes('/fr')) {
+    const language = this.languageService.lg;
+    if (language.includes('fr')) {
       return { url: '/en', label: 'en', src: 'svg/flags/france.svg' };
-    } else if (path.includes('/en')) {
+    } else if (language.includes('en')) {
       return { url: '/fr', label: 'fr', src: 'svg/flags/united-kingdom.svg' };
     }
     return { url: '/fr', label: 'fr', src: 'svg/flags/france.svg' };  // Default values
   }
+
 }

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Location } from '@angular/common';
 import { CommonModule } from '@angular/common';
 import { dev } from '../dev';
 import { INFO } from '../info';
+import { LanguageService } from './../language.service';
 
 @Component({
   selector: 'app-index',
@@ -13,27 +13,17 @@ import { INFO } from '../info';
 })
 export class IndexComponent implements OnInit {
   infos: dev[] = INFO;
-  lg: string = 'fr';
+  lg: string = '';
 
-  constructor(private location: Location) { }
+  constructor(private languageService: LanguageService) { }
 
   ngOnInit() {
-    this.lg = this.getLanguage();
+    this.lg = this.languageService.lg;
     this.filterInfosByLanguage();
   }
 
-  getLanguage(): string {
-    const path = this.location.path();
-    if (path.includes('/fr')) {
-      return 'fr';
-    } else if (path.includes('/en')) {
-      return 'en';
-    }
-    return 'fr';
-  }
-
   filterInfosByLanguage() {
-    const language = this.getLanguage();
+    const language = this.languageService.lg;
     this.infos = INFO.filter(info => info.id === language);
   }
 }
