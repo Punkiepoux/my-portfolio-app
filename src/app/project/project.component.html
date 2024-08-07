@@ -2,7 +2,7 @@
   <div *ngFor="let project of projects" class="col s12 m6 l4">
     <div class="card hoverable">
       <div class="card-image">
-        <img [src]="project.image">
+        <img class="responsive-img" [src]="project.image">
         <span class="card-title">{{project.title}}</span>
       </div>
       <div class="card-content black-text">

@@ -19,11 +19,11 @@ export const PROJECTS: project[] = [
   },
   {
     language: 'fr',
-    title: 'Vintage Auto 83',
-    description: 'Site web du club de véhicules anciens Vintage Auto 83, application Angular, html, css, js et materialize css.',
-    image: 'png/voiture.png',
-    githubLink: 'https://github.com/Punkiepoux/vintage-auto-app',
-    webLink: 'https://google.com'
+    title: 'Whats Dat Film',
+    description: 'Site web style 1 jour 1 film, le but est de deviner le film du jour. Html, CSS, js, php et mysql.',
+    image: 'png/whatsdatfilm.png',
+    githubLink: 'https://github.com/AlexHPGrall/WhatsDatFilm',
+    webLink: 'https://watsdatfilm.alwaysdata.net/'
   },
   {
     language: 'en',
@@ -43,10 +43,10 @@ export const PROJECTS: project[] = [
   },
   {
     language: 'en',
-    title: 'Vintage Auto 83',
-    description: 'Web site of the classic car club Vintage Auto 83, Angular application, html, css, js et materialize css.',
-    image: 'png/voiture.png',
-    githubLink: 'https://github.com/Punkiepoux/vintage-auto-app',
-    webLink: 'https://google.com'
+    title: 'Whats Dat Film',
+    description: 'Website style 1 day 1 film, the goal is to guess the film of the day. Html, CSS, js, php and mysql.',
+    image: 'png/whatsdatfilm.png',
+    githubLink: 'https://github.com/AlexHPGrall/WhatsDatFilm',
+    webLink: 'https://watsdatfilm.alwaysdata.net/'
   }
 ];
