@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { Location } from '@angular/common';
+
+declare var $: any;
 
 @Component({
   selector: 'app-header',
@@ -8,8 +10,12 @@ import { Location } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit{
   constructor(private location: Location) {}
+
+  ngAfterViewInit(): void {
+    ($('.dropdown-trigger') as any).dropdown();
+  }
 
   get languageSwitch(): { url: string, label: string, src: string } {
     const path = this.location.path();

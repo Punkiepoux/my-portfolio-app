@@ -4,13 +4,32 @@
       <span class="left valign-wrapper custom-cursor">
         <h4 class="center-align">Antoine Dausque</h4>
       </span>
-      <ul class="right valign-wrapper">
+      <ul class="right valign-wrapper hide-on-med-and-down">
         <li><a>Index</a></li>
         <li><a>Compétences</a></li>
         <li><a>Expériences</a></li>
         <li><a>Formations</a></li>
         <li><a>Projets</a></li>
-        <li class="flag-li valign-wrapper"><a [href]="languageSwitch.url" class="flag-li valign-wrapper"><img class="flag-image" [src]="languageSwitch.src" alt="{{languageSwitch.label}}"></a></li>
+        <li class="flag-li valign-wrapper">
+          <a [href]="languageSwitch.url" class="flag-li valign-wrapper">
+            <img class="flag-image" [src]="languageSwitch.src" alt="{{languageSwitch.label}}">
+          </a>
+        </li>
+      </ul>
+      <div class="right valign-wrapper hide-on-large-only dropdown-trigger" data-target="dropdown1">
+        <i class="material-icons icon-size">menu</i>
+      </div>
+      <ul id='dropdown1' class='dropdown-content dropdown-ul blue-grey darken-3'>
+        <li><a>Index</a></li>
+        <li><a>Compétences</a></li>
+        <li><a>Expériences</a></li>
+        <li><a>Formations</a></li>
+        <li><a>Projets</a></li>
+        <li class="flag-dropdown valign-wrapper">
+          <a [href]="languageSwitch.url" class="flag-dropdown">
+            <img class="flag-image" [src]="languageSwitch.src" alt="{{languageSwitch.label}}">
+          </a>
+        </li>
       </ul>
     </div>
   </nav>

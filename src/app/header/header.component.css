@@ -31,3 +31,17 @@
 .custom-cursor {
   cursor: default;
 }
+
+.icon-size {
+  font-size: 48px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.dropdown-ul {
+  width: auto !important;
+}
+
+.flag-dropdown {
+  width: 100% !important;
+}
