@@ -27,3 +27,7 @@
 .flag-li {
   height: 64px;
 }
+
+.custom-cursor {
+  cursor: default;
+}
