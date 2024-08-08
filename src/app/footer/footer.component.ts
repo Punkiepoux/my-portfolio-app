@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 export class FooterComponent implements AfterViewInit {
   lg: string = '';
 
-  constructor(private languageService: LanguageService,) { }
+  constructor(private languageService: LanguageService) { }
 
   ngAfterViewInit(): void {
     this.lg = this.languageService.lg;
