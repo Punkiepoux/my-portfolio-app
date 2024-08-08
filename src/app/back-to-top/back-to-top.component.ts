@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <button
-      class="back-to-top blue-grey darken-3 white-text"
+      class="back-to-top blue-grey darken-3 white-text waves-effect waves-light"
       (click)="scrollToTop()"
       [ngClass]="{ visible: isScrolled }"
       aria-label="Retour en haut"

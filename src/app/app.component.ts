@@ -7,6 +7,7 @@ import { CompetencesComponent } from "./competences/competences.component";
 import { FormationComponent } from "./formation/formation.component";
 import { ProjectComponent } from "./project/project.component";
 import { BackToTopComponent } from "./back-to-top/back-to-top.component";
+import { ExperienceComponent } from './experience/experience.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ import { BackToTopComponent } from "./back-to-top/back-to-top.component";
     FormationComponent,
     ProjectComponent,
     BackToTopComponent,
+    ExperienceComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: [
