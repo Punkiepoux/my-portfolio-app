@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <button
-      class="back-to-top"
+      class="back-to-top blue-grey darken-3 white-text"
       (click)="scrollToTop()"
       [ngClass]="{ visible: isScrolled }"
       aria-label="Retour en haut"
@@ -19,12 +19,10 @@ import { CommonModule } from '@angular/common';
   styles: [`
       .back-to-top {
         position: fixed;
-        bottom: 30px;
+        bottom: 60px;
         right: 30px;
         z-index: 1000;
         display: none;
-        background-color: #3949ab; /* Ajustez selon votre thème */
-        color: white;
         border: none;
         border-radius: 50%;
         width: 50px;
