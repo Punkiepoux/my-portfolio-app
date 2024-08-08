@@ -1,16 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-page-not-found',
   template: `
-    <div class='center'>
-      <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png"/>
+    <div *ngIf="lg === 'fr'" class='center'>
+      <img src="png/404.png"/>
       <h1>Hey, cette page n'existe pas !</h1>
-      <a routerLink="/pokemons" class="waves-effect waves-teal btn-flat">
-        Retourner à l' accueil
-      </a>
+    </div>
+
+    <div *ngIf="lg === 'en'" class='center'>
+      <img src="png/404.png"/>
+      <h1>Hey, this page does not exist !</h1>
     </div>
   `,
   styles: ``
 })
-export class PageNotFoundComponent { }
+export class PageNotFoundComponent implements OnInit {
+  lg: string = '';
+
+  constructor(private languageService: LanguageService) {}
+
+  ngOnInit() {
+    this.lg = this.languageService.lg;
+  }
+ }

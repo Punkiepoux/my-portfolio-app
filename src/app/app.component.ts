@@ -19,7 +19,7 @@ import { BackToTopComponent } from "./back-to-top/back-to-top.component";
     CompetencesComponent,
     FormationComponent,
     ProjectComponent,
-    BackToTopComponent
+    BackToTopComponent,
 ],
   templateUrl: './app.component.html',
   styleUrls: [
