@@ -5,15 +5,15 @@
         <h4 class="center-align">Antoine Dausque</h4>
       </span>
       <ul class="right valign-wrapper hide-on-med-and-down">
-        <li><a>Index</a></li>
-        <li *ngIf="lg === 'fr'"><a>Compétences</a></li>
-        <li *ngIf="lg === 'en'"><a>Skills</a></li>
-        <li *ngIf="lg === 'fr'"><a>Expériences</a></li>
-        <li *ngIf="lg === 'en'"><a>Experiences</a></li>
-        <li *ngIf="lg === 'fr'"><a>Projets</a></li>
-        <li *ngIf="lg === 'en'"><a>Projects</a></li>
-        <li *ngIf="lg === 'fr'"><a>Formations</a></li>
-        <li *ngIf="lg === 'en'"><a>Studies</a></li>
+        <li (click)="scrollToSection('index')"><a>Index</a></li>
+        <li *ngIf="lg === 'fr'"><a (click)="scrollToSection('skills')">Compétences</a></li>
+        <li *ngIf="lg === 'en'"><a (click)="scrollToSection('skills')">Skills</a></li>
+        <li *ngIf="lg === 'fr'"><a (click)="scrollToSection('xp')">Expériences</a></li>
+        <li *ngIf="lg === 'en'"><a (click)="scrollToSection('xp')">Experiences</a></li>
+        <li *ngIf="lg === 'fr'"><a (click)="scrollToSection('projects')">Projets</a></li>
+        <li *ngIf="lg === 'en'"><a (click)="scrollToSection('projects')">Projects</a></li>
+        <li *ngIf="lg === 'fr'"><a (click)="scrollToSection('studies')">Formations</a></li>
+        <li *ngIf="lg === 'en'"><a (click)="scrollToSection('studies')">Studies</a></li>
         <li class="flag-li valign-wrapper">
           <a [href]="languageSwitch.url" class="flag-li valign-wrapper">
             <img class="flag-image" [src]="languageSwitch.src" alt="{{languageSwitch.label}}">
@@ -24,15 +24,15 @@
         <i class="material-icons icon-size">menu</i>
       </div>
       <ul id='dropdown1' class='dropdown-content dropdown-ul blue-grey darken-3'>
-        <li><a>Index</a></li>
-        <li *ngIf="lg === 'fr'"><a>Compétences</a></li>
-        <li *ngIf="lg === 'en'"><a>Skills</a></li>
-        <li *ngIf="lg === 'fr'"><a>Expériences</a></li>
-        <li *ngIf="lg === 'en'"><a>Experiences</a></li>
-        <li *ngIf="lg === 'fr'"><a>Projets</a></li>
-        <li *ngIf="lg === 'en'"><a>Projects</a></li>
-        <li *ngIf="lg === 'fr'"><a>Formations</a></li>
-        <li *ngIf="lg === 'en'"><a>Studies</a></li>
+        <li (click)="scrollToSection('index')"><a>Index</a></li>
+        <li *ngIf="lg === 'fr'"><a (click)="scrollToSection('skills')">Compétences</a></li>
+        <li *ngIf="lg === 'en'"><a (click)="scrollToSection('skills')">Skills</a></li>
+        <li *ngIf="lg === 'fr'"><a (click)="scrollToSection('xp')">Expériences</a></li>
+        <li *ngIf="lg === 'en'"><a (click)="scrollToSection('xp')">Experiences</a></li>
+        <li *ngIf="lg === 'fr'"><a (click)="scrollToSection('projects')">Projets</a></li>
+        <li *ngIf="lg === 'en'"><a (click)="scrollToSection('projects')">Projects</a></li>
+        <li *ngIf="lg === 'fr'"><a (click)="scrollToSection('studies')">Formations</a></li>
+        <li *ngIf="lg === 'en'"><a (click)="scrollToSection('studies')">Studies</a></li>
         <li class="flag-dropdown valign-wrapper">
           <a [href]="languageSwitch.url" class="flag-dropdown">
             <img class="flag-image" [src]="languageSwitch.src" alt="{{languageSwitch.label}}">

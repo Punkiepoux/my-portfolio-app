@@ -1,6 +1,6 @@
 import { LanguageService } from './../language.service';
 import { AfterViewInit, Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 
 declare var $: any;
 
@@ -14,11 +14,18 @@ declare var $: any;
 export class HeaderComponent implements AfterViewInit{
   lg: string = '';
 
-  constructor(private languageService: LanguageService) { }
+  constructor (
+    private languageService: LanguageService,
+    private viewportScroller: ViewportScroller
+  ) { }
 
   ngAfterViewInit(): void {
     ($('.dropdown-trigger') as any).dropdown();
     this.lg = this.languageService.lg;
+  }
+
+  scrollToSection(sectionId: string): void {
+    this.viewportScroller.scrollToAnchor(sectionId);
   }
 
   get languageSwitch(): { url: string, label: string, src: string } {
